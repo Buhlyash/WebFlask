@@ -1,0 +1,49 @@
+2022-02-19 03:25:25,321 ERROR: Exception on /index [GET] [in C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\routes.py", line 25, in index
+    return render_template("index.html", title='Home Page', form=form,
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\templates\base.html", line 60, in template
+    {% block content %}{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endif'. The innermost block that needs to be closed is 'if'.
+2022-02-19 03:26:05,371 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:29:44,311 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:31:21,774 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:32:11,419 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:35:12,674 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:37:30,417 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:38:34,172 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:39:21,531 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:40:35,322 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:41:04,912 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:42:23,851 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:43:28,165 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:49:21,879 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 04:34:25,984 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 04:35:27,596 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 04:35:42,474 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 04:36:08,722 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 04:36:39,991 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 04:46:50,750 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 04:48:40,065 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]

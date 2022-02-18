@@ -1,0 +1,107 @@
+2022-02-18 22:44:32,116 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 22:48:17,581 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 22:48:39,114 ERROR: Exception on /login [POST] [in C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\routes.py", line 40, in login
+    if user is None or not user.check_password(form.password.data):
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\models.py", line 25, in check_password
+    return check_password_hash(self.password_hash, password)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\werkzeug\security.py", line 215, in check_password_hash
+    if pwhash.count("$") < 2:
+AttributeError: 'NoneType' object has no attribute 'count'
+2022-02-18 23:17:59,028 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:18:00,806 ERROR: Exception on / [GET] [in C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\routes.py", line 24, in index
+    posts = current_user.followed_posts().all()
+AttributeError: 'User' object has no attribute 'followed_posts'
+2022-02-18 23:24:33,785 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:24:35,790 ERROR: Exception on / [GET] [in C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\routes.py", line 25, in index
+    return render_template('index.html', title='Home Page', form=form, posts=posts)
+NameError: name 'posts' is not defined
+2022-02-18 23:24:52,969 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:27:31,963 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:27:39,239 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:34:35,884 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:40:06,223 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:41:15,994 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:44:55,240 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-18 23:45:38,569 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:30]
+2022-02-19 02:33:46,746 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 02:35:04,431 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 02:36:52,862 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 02:37:41,391 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 02:39:38,114 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 02:56:00,815 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 02:56:23,783 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 02:58:42,079 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:02:42,642 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:03:15,796 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:10:02,002 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:11:29,043 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:11:54,996 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:12:36,545 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:14:01,945 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:19:11,267 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:20:40,031 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:21:30,269 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:24:33,781 INFO: Superchat startup [in C:\Users\harch\PycharmProjects\WebFlask\apps\__init__.py:34]
+2022-02-19 03:24:37,556 ERROR: Exception on /index [GET] [in C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask_login\utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\routes.py", line 25, in index
+    return render_template("index.html", title='Home Page', form=form,
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\templates\index.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\harch\PycharmProjects\WebFlask\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\harch\PycharmProjects\WebFlask\apps\templates\base.html", line 60, in template
+    {% block content %}{% endblock %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endif'. The innermost block that needs to be closed is 'if'.
